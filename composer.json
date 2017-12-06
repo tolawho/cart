@@ -20,7 +20,7 @@
             "Tolawho\\Cart\\": "src"
         },
         "files": [
-            "Helper.php"
+            "src/Helper.php"
         ]
     },
     "extra": {
