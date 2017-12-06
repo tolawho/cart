@@ -1,0 +1,37 @@
+{
+    "name": "tolawho/cart",
+    "description": "Shopping Cart for Laravel 5",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tolawho",
+            "email": "tolawho@gmail.com"
+        }
+    ],
+    "keywords": ["shopping", "cart", "laravel"],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0|~5.1|~5.2|~5.3|~5.4|~5.5",
+        "illuminate/session": "~5.0|~5.1|~5.2|~5.3|~5.4|~5.5",
+        "illuminate/events": "~5.0|~5.1|~5.2|~5.3|~5.4|~5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tolawho\\Cart\\": "src"
+        },
+        "files": [
+            "src/Helper.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tolawho\\Cart\\Providers\\ServiceProvider"
+            ],
+            "aliases": {
+                "Cart": "Tolawho\\Cart\\Facades\\Cart"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
